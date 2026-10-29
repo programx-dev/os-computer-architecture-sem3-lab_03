@@ -12,7 +12,8 @@ find_package(Threads REQUIRED)
 
 add_executable(median_filter
     src/main.c
-    # Добавить src/filter.c и src/paralell.c, когда в них появится код.
+    src/filter.c
+    src/parallel.c
 )
 
 target_compile_options(median_filter PRIVATE -Wall -Wextra -Werror -pedantic)
