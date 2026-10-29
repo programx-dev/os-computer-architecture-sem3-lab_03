@@ -38,7 +38,7 @@ void print_arr(int32_t *arr, size_t len) {
 }
 
 int main(void) {
-    Task *tasks; // Главный поток занимается только упралвением и не учитывается в общем кол-ве
+    Task *tasks;
     General general;
 
     int status = EXIT_SUCCESS;
@@ -136,7 +136,6 @@ int main(void) {
         }
     }
 
-
     // Создание задач
     size_t size_window = general.len / general.max_threads;
     size_t extra = general.len % general.max_threads;
@@ -207,8 +206,8 @@ int main(void) {
     }
 
     // Создание потоков
-    for (i = 0; i < general.max_threads; ++i) {
-        int error = pthread_create(&threads[i], NULL, worker, &tasks[i]);
+    for (i = 1; i < general.max_threads; ++i) {
+        int error = pthread_create(&threads[i - 1], NULL, worker, &tasks[i]);
 
         if (error != 0) {
             fprintf(stderr, "pthread_create: %s\n", strerror(error));
@@ -219,12 +218,16 @@ int main(void) {
         ++created_threads;
     }
 
-    if (created_threads == general.max_threads) {
+    if (created_threads == general.max_threads - 1) {
         general.is_ready = true;
     }
 
     if (!check(pthread_mutex_unlock(&general.start_mutex), "pthread_mutex_unlock")) {
         return EXIT_FAILURE;
+    }
+
+    if (status == EXIT_SUCCESS) {
+        worker(&tasks[0]);
     }
 
     // Ожидание завершения

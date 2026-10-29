@@ -1,0 +1,167 @@
+27313 execve("./median_filter", ["./median_filter"], ["SHELL=/bin/bash", "COLORTERM=truecolor", "VSCODE_DEBUGPY_ADAPTER_ENDPOINTS"..., "WSL2_GUI_APPS_ENABLED=1", "TERM_PROGRAM_VERSION=1.127.0", "COPILOT_DEBUG_NONCE=fc3081c76cf1"..., "WSL_DISTRO_NAME=Ubuntu", "_CMAKE_TOOLS_LAUNCH_TERMINAL_TAR"..., "COPILOT_CLI_ENABLED_FEATURE_FLAG"..., "PYDEVD_DISABLE_FILE_VALIDATION=1", "ELECTRON_RUN_AS_NODE=1", "NAME=MACHCREATOR", "PERF_EXEC_PATH=/usr/lib/linux-to"..., "PWD=/home/pc/dev/mai/os-computer"..., "LOGNAME=pc", "COPILOT_OTEL_FILE_EXPORTER_PATH="..., "VSCODE_ESM_ENTRYPOINT=vs/workben"..., "BUNDLED_DEBUGPY_PATH=/home/pc/.v"..., "VSCODE_GIT_ASKPASS_NODE=/home/pc"..., "HOME=/home/pc", "LANG=C.UTF-8", "_CMAKE_TOOLS_LAUNCH_TERMINAL_PAT"..., "WSL_INTEROP=/run/WSL/518_interop", "LS_COLORS=rs=0:di=01;34:ln=01;36"..., "VIRTUAL_ENV=/home/pc/dev/mai/os-"..., "PYTHONSTARTUP=/home/pc/.vscode-s"..., "WAYLAND_DISPLAY=wayland-0", "GIT_ASKPASS=/home/pc/.vscode-ser"..., "VSCODE_L10N_BUNDLE_LOCATION=vsco"..., "VSCODE_GIT_ASKPASS_EXTRA_ARGS=", "VSCODE_PYTHON_AUTOACTIVATE_GUARD"..., "LESSCLOSE=/usr/bin/lesspipe %s %"..., "VSCODE_HANDLES_SIGPIPE=true", "TERM=xterm-256color", "PYTHON_BASIC_REPL=1", "LESSOPEN=| /usr/bin/lesspipe %s", "USER=pc", "VSCODE_GIT_IPC_HANDLE=/run/user/"..., "DISPLAY=:0", "SHLVL=1", "VSCODE_CWD=/mnt/c/Users/pc/AppDa"..., "VSCODE_RECONNECTION_GRACE_TIME=1"..., "VIRTUAL_ENV_PROMPT=(.venv) ", "XDG_RUNTIME_DIR=/run/user/1000", "PS1=\\[\33]633;A\7\\](.venv) \\[\33]633;"..., "DEBUGINFOD_URLS=https://debuginf"..., "WSLENV=VSCODE_WSL_EXT_LOCATION/u"..., "VSCODE_WSL_EXT_LOCATION=/mnt/c/U"..., "VSCODE_GIT_ASKPASS_MAIN=/home/pc"..., "XDG_DATA_DIRS=/usr/local/share:/"..., "PATH=/home/pc/dev/mai/os-compute"..., "APPLICATION_INSIGHTS_NO_STATSBEA"..., "DBUS_SESSION_BUS_ADDRESS=unix:pa"..., "VSCODE_NLS_CONFIG={\"userLocale\":"..., "HOSTTYPE=x86_64", "DEBUG=release", "PULSE_SERVER=unix:/mnt/wslg/Puls"..., "MXC_BIN_DIR=/home/pc/.vscode-ser"..., "VSCODE_HANDLES_UNCAUGHT_ERRORS=t"..., "TERM_PROGRAM=vscode", "VSCODE_IPC_HOOK_CLI=/run/user/10"..., "_=/usr/bin/strace"]) = 0
+27313 brk(NULL)                         = 0x629dfb4ee000
+27313 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7d3256a92000
+27313 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+27313 openat(AT_FDCWD</home/pc/dev/mai/os-computer-architecture-sem3/lab_03/build>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+27313 fstat(3</etc/ld.so.cache>, {st_dev=makedev(0x8, 0x30), st_ino=1469, st_mode=S_IFREG|0644, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=64, st_size=32707, st_atime=1793265311 /* 2026-10-29T12:15:11.640160179+0300 */, st_atime_nsec=640160179, st_mtime=1793265311 /* 2026-10-29T12:15:11.616160179+0300 */, st_mtime_nsec=616160179, st_ctime=1793265311 /* 2026-10-29T12:15:11.632160179+0300 */, st_ctime_nsec=632160179}) = 0
+27313 mmap(NULL, 32707, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7d3256a8a000
+27313 close(3</etc/ld.so.cache>)        = 0
+27313 openat(AT_FDCWD</home/pc/dev/mai/os-computer-architecture-sem3/lab_03/build>, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib/x86_64-linux-gnu/libc.so.6>
+27313 read(3</usr/lib/x86_64-linux-gnu/libc.so.6>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+27313 pread64(3</usr/lib/x86_64-linux-gnu/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+27313 fstat(3</usr/lib/x86_64-linux-gnu/libc.so.6>, {st_dev=makedev(0x8, 0x30), st_ino=44637, st_mode=S_IFREG|0755, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=4160, st_size=2129424, st_atime=1793265311 /* 2026-10-29T12:15:11.472160179+0300 */, st_atime_nsec=472160179, st_mtime=1788444912 /* 2026-09-03T17:15:12+0300 */, st_mtime_nsec=0, st_ctime=1789715354 /* 2026-09-18T10:09:14.711615359+0300 */, st_ctime_nsec=711615359}) = 0
+27313 pread64(3</usr/lib/x86_64-linux-gnu/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+27313 mmap(NULL, 2174352, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libc.so.6>, 0) = 0x7d3256800000
+27313 mmap(0x7d3256828000, 1609728, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libc.so.6>, 0x28000) = 0x7d3256828000
+27313 mmap(0x7d32569b1000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libc.so.6>, 0x1b1000) = 0x7d32569b1000
+27313 mmap(0x7d3256a00000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libc.so.6>, 0x1ff000) = 0x7d3256a00000
+27313 mmap(0x7d3256a06000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7d3256a06000
+27313 close(3</usr/lib/x86_64-linux-gnu/libc.so.6>) = 0
+27313 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7d3256a87000
+27313 arch_prctl(ARCH_SET_FS, 0x7d3256a87740) = 0
+27313 set_tid_address(0x7d3256a87a10)   = 27313
+27313 set_robust_list(0x7d3256a87a20, 24) = 0
+27313 rseq(0x7d3256a88060, 0x20, 0, 0x53053053) = 0
+27313 mprotect(0x7d3256a00000, 16384, PROT_READ) = 0
+27313 mprotect(0x629dcfe8a000, 4096, PROT_READ) = 0
+27313 mprotect(0x7d3256ad2000, 8192, PROT_READ) = 0
+27313 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+27313 munmap(0x7d3256a8a000, 32707)     = 0
+27313 getpid()                          = 27313
+27313 gettid()                          = 27313
+27313 write(2</dev/pts/4<char 136:4>>, "main: PID=27313 TID=27313\n", 26) = 26
+27313 write(2</dev/pts/4<char 136:4>>, "iterations radius max_threads: ", 31) = 31
+27313 fstat(0</home/pc/dev/mai/os-computer-architecture-sem3/lab_03/data/input_10x10.txt>, {st_dev=makedev(0x8, 0x30), st_ino=12791, st_mode=S_IFREG|0644, st_nlink=1, st_uid=1000, st_gid=1000, st_blksize=4096, st_blocks=8, st_size=372, st_atime=1793266961 /* 2026-10-29T12:42:41.521001022+0300 */, st_atime_nsec=521001022, st_mtime=1793266759 /* 2026-10-29T12:39:19.341066818+0300 */, st_mtime_nsec=341066818, st_ctime=1793266759 /* 2026-10-29T12:39:19.341066818+0300 */, st_ctime_nsec=341066818}) = 0
+27313 getrandom("\x71\x87\x9e\xc9\x57\xa4\x9d\x8b", 8, GRND_NONBLOCK) = 8
+27313 brk(NULL)                         = 0x629dfb4ee000
+27313 brk(0x629dfb50f000)               = 0x629dfb50f000
+27313 read(0</home/pc/dev/mai/os-computer-architecture-sem3/lab_03/data/input_10x10.txt>, "1 1 4\n10 10\n108 161 252 99 203 2"..., 4096) = 372
+27313 write(2</dev/pts/4<char 136:4>>, "rows cols: ", 11) = 11
+27313 write(2</dev/pts/4<char 136:4>>, "matrix:\n", 8) = 8
+27313 rt_sigaction(SIGRT_1, {sa_handler=0x7d3256899610, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7d3256845330}, NULL, 8) = 0
+27313 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+27313 mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7d3255fff000
+27313 mprotect(0x7d3256000000, 8388608, PROT_READ|PROT_WRITE) = 0
+27313 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+27313 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7d32567ff990, parent_tid=0x7d32567ff990, exit_signal=0, stack=0x7d3255fff000, stack_size=0x7fff80, tls=0x7d32567ff6c0} => {parent_tid=[27314]}, 88) = 27314
+27314 rseq(0x7d32567fffe0, 0x20, 0, 0x53053053 <unfinished ...>
+27313 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+27314 <... rseq resumed>)               = 0
+27313 <... rt_sigprocmask resumed>NULL, 8) = 0
+27314 set_robust_list(0x7d32567ff9a0, 24 <unfinished ...>
+27313 mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+27314 <... set_robust_list resumed>)    = 0
+27313 <... mmap resumed>)               = 0x7d32557fe000
+27314 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+27313 mprotect(0x7d32557ff000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+27314 <... rt_sigprocmask resumed>NULL, 8) = 0
+27313 <... mprotect resumed>)           = 0
+27314 futex(0x7ffc826eeca0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+27313 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+27313 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7d3255ffe990, parent_tid=0x7d3255ffe990, exit_signal=0, stack=0x7d32557fe000, stack_size=0x7fff80, tls=0x7d3255ffe6c0} => {parent_tid=[27315]}, 88) = 27315
+27313 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+27315 rseq(0x7d3255ffefe0, 0x20, 0, 0x53053053 <unfinished ...>
+27313 <... rt_sigprocmask resumed>NULL, 8) = 0
+27315 <... rseq resumed>)               = 0
+27313 mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+27315 set_robust_list(0x7d3255ffe9a0, 24 <unfinished ...>
+27313 <... mmap resumed>)               = 0x7d3254ffd000
+27315 <... set_robust_list resumed>)    = 0
+27313 mprotect(0x7d3254ffe000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+27315 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+27313 <... mprotect resumed>)           = 0
+27315 <... rt_sigprocmask resumed>NULL, 8) = 0
+27313 rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+27315 futex(0x7ffc826eeca0, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+27313 <... rt_sigprocmask resumed>[], 8) = 0
+27313 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7d32557fd990, parent_tid=0x7d32557fd990, exit_signal=0, stack=0x7d3254ffd000, stack_size=0x7fff80, tls=0x7d32557fd6c0} => {parent_tid=[27316]}, 88) = 27316
+27316 rseq(0x7d32557fdfe0, 0x20, 0, 0x53053053 <unfinished ...>
+27313 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+27316 <... rseq resumed>)               = 0
+27313 <... rt_sigprocmask resumed>NULL, 8) = 0
+27316 set_robust_list(0x7d32557fd9a0, 24 <unfinished ...>
+27313 futex(0x7ffc826eeca0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+27316 <... set_robust_list resumed>)    = 0
+27313 <... futex resumed>)              = 1
+27316 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+27314 <... futex resumed>)              = 0
+27313 getpid( <unfinished ...>
+27316 <... rt_sigprocmask resumed>NULL, 8) = 0
+27313 <... getpid resumed>)             = 27313
+27314 futex(0x7ffc826eeca0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+27316 getpid( <unfinished ...>
+27313 gettid( <unfinished ...>
+27314 <... futex resumed>)              = 1
+27313 <... gettid resumed>)             = 27313
+27316 <... getpid resumed>)             = 27313
+27315 <... futex resumed>)              = 0
+27313 write(2</dev/pts/4<char 136:4>>, "worker: PID=27313 TID=27313 rang"..., 42 <unfinished ...>
+27316 gettid( <unfinished ...>
+27314 getpid( <unfinished ...>
+27316 <... gettid resumed>)             = 27316
+27315 futex(0x7ffc826eeca0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+27313 <... write resumed>)              = 42
+27314 <... getpid resumed>)             = 27313
+27316 futex(0x7d3256a06700, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+27313 futex(0x7d3256a06700, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+27315 <... futex resumed>)              = 0
+27314 gettid( <unfinished ...>
+27313 <... futex resumed>)              = 0
+27316 <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+27315 getpid( <unfinished ...>
+27313 futex(0x7ffc826eec84, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+27314 <... gettid resumed>)             = 27314
+27316 write(2</dev/pts/4<char 136:4>>, "worker: PID=27313 TID=27316 rang"..., 44 <unfinished ...>
+27315 <... getpid resumed>)             = 27313
+27314 futex(0x7d3256a06700, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+27316 <... write resumed>)              = 44
+27315 gettid( <unfinished ...>
+27316 futex(0x7d3256a06700, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+27315 <... gettid resumed>)             = 27315
+27316 <... futex resumed>)              = 1
+27315 write(2</dev/pts/4<char 136:4>>, "worker: PID=27313 TID=27315 rang"..., 43 <unfinished ...>
+27314 <... futex resumed>)              = 0
+27316 futex(0x7ffc826eec84, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+27315 <... write resumed>)              = 43
+27314 futex(0x7d3256a06700, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+27315 futex(0x7d3256a06700, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+27314 <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+27315 <... futex resumed>)              = 0
+27314 write(2</dev/pts/4<char 136:4>>, "worker: PID=27313 TID=27314 rang"..., 43 <unfinished ...>
+27315 futex(0x7ffc826eec84, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+27314 <... write resumed>)              = 43
+27314 futex(0x7d3256a06700, FUTEX_WAKE_PRIVATE, 1) = 0
+27314 futex(0x7ffc826eec84, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+27313 <... futex resumed>)              = 0
+27316 <... futex resumed>)              = 0
+27315 <... futex resumed>)              = 0
+27314 <... futex resumed>)              = 3
+27313 futex(0x7d32567ff990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 27314, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+27316 rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+27315 rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+27316 <... rt_sigprocmask resumed>NULL, 8) = 0
+27314 rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+27316 madvise(0x7d3254ffd000, 8368128, MADV_DONTNEED <unfinished ...>
+27315 <... rt_sigprocmask resumed>NULL, 8) = 0
+27314 <... rt_sigprocmask resumed>NULL, 8) = 0
+27316 <... madvise resumed>)            = 0
+27315 madvise(0x7d32557fe000, 8368128, MADV_DONTNEED <unfinished ...>
+27316 exit(0 <unfinished ...>
+27314 madvise(0x7d3255fff000, 8368128, MADV_DONTNEED <unfinished ...>
+27315 <... madvise resumed>)            = 0
+27316 <... exit resumed>)               = ?
+27314 <... madvise resumed>)            = 0
+27315 exit(0 <unfinished ...>
+27316 +++ exited with 0 +++
+27315 <... exit resumed>)               = ?
+27314 exit(0 <unfinished ...>
+27315 +++ exited with 0 +++
+27314 <... exit resumed>)               = ?
+27313 <... futex resumed>)              = 0
+27314 +++ exited with 0 +++
+27313 fstat(1</dev/null<char 1:3>>, {st_dev=makedev(0, 0x6), st_ino=4, st_mode=S_IFCHR|0666, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_rdev=makedev(0x1, 0x3), st_atime=1793265313 /* 2026-10-29T12:15:13.392160183+0300 */, st_atime_nsec=392160183, st_mtime=1793265313 /* 2026-10-29T12:15:13.392160183+0300 */, st_mtime_nsec=392160183, st_ctime=1793265313 /* 2026-10-29T12:15:13.392160183+0300 */, st_ctime_nsec=392160183}) = 0
+27313 ioctl(1</dev/null<char 1:3>>, TCGETS, 0x7ffc826ee700) = -1 ENOTTY (Inappropriate ioctl for device)
+27313 write(1</dev/null<char 1:3>>, "10 10\n108 161 196 203 196 193 11"..., 397) = 397
+27313 lseek(0</home/pc/dev/mai/os-computer-architecture-sem3/lab_03/data/input_10x10.txt>, -1, SEEK_CUR) = 371
+27313 exit_group(0)                     = ?
+27313 +++ exited with 0 +++
